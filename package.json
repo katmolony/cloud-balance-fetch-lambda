@@ -1,23 +1,15 @@
 {
   "name": "cloud-balance-fetch-lambda",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lambda function to fetch AWS costs and resources via IAM role assumption",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "echo \"No test specified\" && exit 0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/katmolony/cloud-balance-fetch-lambda.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/katmolony/cloud-balance-fetch-lambda/issues"
-  },
-  "homepage": "https://github.com/katmolony/cloud-balance-fetch-lambda#readme",
   "dependencies": {
-    "aws-sdk": "^2.1692.0"
+    "@aws-sdk/client-cost-explorer": "^3.509.0",
+    "@aws-sdk/client-ec2": "^3.509.0",
+    "@aws-sdk/client-sts": "^3.509.0"
   }
 }
