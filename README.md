@@ -114,6 +114,13 @@ Or write a test script using `aws-sdk-client-mock` for mocking AWS responses.
   ]
 }
 ```
+---
+
+## System Architecture
+
+The diagram below illustrates how the Cloud Balance mobile app, backend API, AWS Lambda functions, and PostgreSQL database interact across public and private cloud environments.
+
+![Cloud Balance Architecture](assets/architect.png)
 
 ---
 
